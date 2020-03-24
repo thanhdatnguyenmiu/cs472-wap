@@ -31,7 +31,7 @@ section {
     margin-top: 20px;
 }
 
-.section::after {
+.content::after {
     content: '';
     border-bottom: 3px solid gray;
     width: 100%;
