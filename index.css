@@ -1,6 +1,7 @@
 header {
-    background-image: url('images.jpeg');
+    background-image: url('background.jpg');
     padding: 30px;
+    border-bottom: 10px;
 }
 
 body {
