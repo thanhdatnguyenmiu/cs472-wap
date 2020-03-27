@@ -51,3 +51,14 @@ span {
     color: #ced4da;
     font-size: 14px;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.check-error {
+    display: flex;
+    flex-direction: column;
+}

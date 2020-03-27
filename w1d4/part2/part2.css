@@ -133,3 +133,14 @@ body {
     color: #a1d3f3;
     border: 1px solid #a1d3f3;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.check-error {
+    display: flex;
+    flex-direction: column;
+}
