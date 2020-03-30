@@ -1,11 +1,11 @@
 "use strict"
 //Question 1
-const max = function(a, b) {
+const max = (a, b) => {
     return a > b ? a : b;
 }
 
 //Question 2
-const maxOfThree = function(a, b, c) {
+const maxOfThree = (a, b, c) => {
     let max = a;
     if (b > max) {
         max = b;
@@ -17,11 +17,11 @@ const maxOfThree = function(a, b, c) {
 }
 
 //Question 3
-const isVowel = function(a) {
+const isVowel = (a) => {
         return a.length === 1 && true;
     }
     //Question 4
-const sum1 = function(numbers) {
+const sum1 = (numbers) => {
     let sum = 0;
     for (let i = 0; i < numbers.length; i++) {
         sum += numbers[i];
@@ -29,7 +29,7 @@ const sum1 = function(numbers) {
     return sum;
 }
 
-const multiply1 = function(numbers) {
+const multiply1 = (numbers) => {
     let multiply = 0;
     for (let i = 0; i < numbers.length; i++) {
         sum *= numbers[i];
@@ -38,47 +38,47 @@ const multiply1 = function(numbers) {
 }
 
 //Question 5
-const reverse = function(word) {
+const reverse = (word) => {
     return word.split("").reverse().join("");
 }
 
 //Question 6
-const findLongestWord = function(words) {
-    return words.reduce(function(firstWord, secondWord) {
+const findLongestWord = (words) => {
+    return words.reduce((firstWord, secondWord) => {
         return firstWord.length > secondWord.length ? firstWord : secondWord;
     })
 }
 
 //Question 7
-const filterLongWords = function(words, i) {
-    return words.filter(function(word) {
+const filterLongWords = (words, i) => {
+    return words.filter((word) => {
         return word.length > i;
     })
 }
 
 //Question 8
-const computeSumOfSquares = function(numbers) {
-    return numbers.map(function(number) { return number * number; }).reduce(function(accum, current) { return accum + current; })
+const computeSumOfSquares = (numbers) => {
+    return numbers.map((number) => number * number).reduce((accum, current) => accum + current);
 }
 
 //Question 9
-const printOddNumberOnly = function(numbers) {
-    return numbers.filter(function(number) { return number % 2 != 0 }).map(function(item) { console.log(item); })
+const printOddNumberOnly = (numbers) => {
+    return numbers.filter((number) => number % 2 != 0).map((item) => { console.log(item); })
 }
 
 //Question 10
-const computeSumOfSquaresOnly = function(numbers) {
-    const evenArray = numbers.filter(function(number) { return number % 2 != 0 });
+const computeSumOfSquaresOnly = (numbers) => {
+    const evenArray = numbers.filter((number) => number % 2 != 0);
     const sumOfSquares = computeSumOfSquares(evenArray);
     return sumOfSquares;
 }
 
 //Question 11
-const sum = function(numbers) {
-    return numbers.reduce(function(accumylator, current) { return accumylator + current })
+const sum = (numbers) => {
+    return numbers.reduce((accumylator, current) => accumylator + current);
 }
 
-const multiply = function(numbers) {
+const multiply = (numbers) => {
     return numbers.reduce((accumylator, current) => (accumylator * current))
 }
 

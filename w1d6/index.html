@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Decorator</title>
+    <link href="./index.css" type="text/css" rel="stylesheet" />
+    <script src="./index.js" type="text/javascript"></script>
+
+    <!--
+		This is a widely-used JavaScript library named jQuery that has
+		many useful functions which we need.
+		Please don't remove this link or change its URL; leave it as-is!
+		-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+
+    <!-- link to your script file here -->
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Text Decorator</h1>
+
+        <div>
+            <img src="../images/decorated.gif" alt="very decorated!" />
+        </div>
+        <fieldset>
+            <legend>Text</legend>
+            <textarea id="textArea" name="text" cols="30" rows="4">Simple Value 1 &#13;&#10;Simple Value 2</textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Decoration</legend>
+            <div>
+                <input id="biggerDecorations" type="submit" value="Bigger Decorations" />
+            </div>
+            <input type="checkbox" id="bling" name="bling">
+            <label for="bling">Bling</label>
+            <div>
+                <input id="pig-latin" type="submit" value="Pig Latin" />
+            </div>
+            <div>
+                <input id="malkovitch" type="submit" value="Malkovitch" />
+            </div>
+        </fieldset>
+        <!-- Your UI controls go here -->
+    </div>
+</body>
+
+</html>
