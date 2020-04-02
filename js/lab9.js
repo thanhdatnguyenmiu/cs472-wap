@@ -1,4 +1,8 @@
 "use strict";
+/*jshint esversion: 6 */
+/*jslint browser: true */
+/*global window */
+/*globals $:false */
 //Question 1
 const person = {
     name: "",
@@ -29,3 +33,35 @@ function Person(name, dateOfBirth) {
 
 const Peter = new Person("Peter", "November 10,1985");
 Peter.toString();
+//QUESTION 4A
+$(document).ready(function() {
+    $('#submit').on('click', function(event) {
+        event.preventDefault();
+        const email = $("#email").val();
+        const password = $("#password").val();
+        console.log(email);
+        console.log(password);
+    });
+});
+
+//QUESTION 4B
+$(document).ready(function() {
+    $('#btnSubmit').on('click', function(event) {
+        event.preventDefault();
+        const productNumber = $("#productNumber").val();
+        const name = $("#name").val();
+        const unitPirce = $("#unitPirce").val();
+        const url = $("#url").val();
+        const quantity = $("#quantity").val();
+        const supplier = $("#supplier").val();
+        const date = $("#date").val();
+        const html = `<p>Product Name:${productNumber}</p>
+        <p>Name:${name}</p>
+        <p>Unit Price:${unitPirce}</p>
+        <p>URL:${url}</p>
+        <p>Quantitu:${quantity}</p>
+        <p>Supplier:${supplier}</p>
+        <p>Date:${date}</p>`;
+        $('.information').append(html);
+    });
+});
