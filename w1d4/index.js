@@ -1,5 +1,5 @@
 const pageLoad = () => {
-    document.getElementById("submit").onclick = submit;
+    document.getElementById("submit").submit = submit;
 }
 
 const submit = () => {
