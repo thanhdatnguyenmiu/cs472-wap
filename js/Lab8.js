@@ -38,7 +38,7 @@ const Employee = (function() {
     let name;
     let age;
     let salary;
-    const setAge = (newAge) => {
+    const setAge = function(newAge) {
         age = newAge;
         console.log(age);
     };
