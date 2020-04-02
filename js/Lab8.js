@@ -13,7 +13,6 @@ var count = (function() {
     return {
         add: add,
         reset: reset,
-        make_adder: make_adder,
         getCounter: getCounter
     };
 })();
