@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div class="container">
+        <span>Census Form</span>
+        <form id="form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">*Full Name:</label>
+                <input type="text" class="form-control" name="name" id="name" aria-describedby="name" required placeholder="Enter your fullname">
+                <small id="emailHelp" class="form-text text-muted">Enter your full name as printed on your government-Issued ID</small>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="citizenID">*Citizen ID:</label>
+                        <input type="text" class="form-control" id="citizenID" name="citizenID" required pattern="^[0-9]{10}$" placeholder="XXXXXXXXXX">
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                        <label for="ssn">*Social Security Number:</label>
+                        <input type="text" class="form-control" id="ssn" name="ssn" required pattern="^[0-9]{3}-[0-9]{2}-[0-9]{4}$" placeholder="XXX-XX-XXXX">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="form-group">
+                        <label for="sel1">Select list:</label>
+                        <select class="form-control" id="sel1" required aria-placeholder="Select...">
+                          <option>New Mexico</option>
+                          <option>Arizona</option>
+                          <option>Texas</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="radio">
+                        <div><label for="exampleInputPassword1">*Senior Citizen?</label></div>
+                        <div class="row">
+                            <div class="col"> <label><input type="radio" id="sCitizenradio" name="sCitizenradio" value="Yes" checked required>Yes</label></div>
+                            <div class="col"><label><input type="radio" id="sCitizenradio" name="sCitizenradio" value="No" required>No</label></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="reset" class="btn btn-primary">Reset</button>
+            <div>
+                <table class="table" id="myTable">
+                    <thead>
+                        <tr>
+                            <th scope="col">CitizenID</th>
+                            <th scope="col">Social Security</th>
+                            <th scope="col">Full Name</th>
+                            <th scope="col">State</th>
+                            <th scope="col">Senior</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">12323423423</th>
+                            <td>123-23-1233</td>
+                            <td>Otto</td>
+                            <td>Arizona</td>
+                            <td>Yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+        </form>
+        <script src="./index.js" async defer></script>
+</body>
+
+
+</html>

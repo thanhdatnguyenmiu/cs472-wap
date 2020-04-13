@@ -1,0 +1,24 @@
+.navbar {
+    background-color: #e3f2fd;
+}
+
+.header {
+    font-size: 24pt;
+}
+
+.title {
+    font-size: 18pt;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: gray;
+    width: 100%;
+}
+
+footer p {
+    margin-top: 5px;
+    margin-left: 10px;
+}
